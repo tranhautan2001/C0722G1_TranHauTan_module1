@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36813954-f78a-4368-a8f1-9e7cd5db92cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/abc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/My Music" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,6 +53,9 @@
       <workItem from="1656638694413" duration="13000" />
       <workItem from="1656639515892" duration="32000" />
       <workItem from="1656639557049" duration="73000" />
+      <workItem from="1656659106777" duration="4000" />
+      <workItem from="1656659169552" duration="47000" />
+      <workItem from="1656662452673" duration="50000" />
     </task>
     <servers />
   </component>
@@ -60,9 +63,9 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="548" y="149" key="FileChooserDialogImpl" timestamp="1656639626704">
+    <state x="548" y="149" key="FileChooserDialogImpl" timestamp="1656662500716">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="548" y="149" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1656639626704" />
+    <state x="548" y="149" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1656662500716" />
   </component>
 </project>
