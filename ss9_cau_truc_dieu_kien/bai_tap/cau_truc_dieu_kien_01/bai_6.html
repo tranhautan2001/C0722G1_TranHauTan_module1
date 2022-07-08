@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let wage =parseInt(prompt("nhập vào số lượng hàng hóa bán được"));
+    let roSe = parseInt(prompt("nhập vào % tiền hoa hồng nhận được khi bạn bán được "+wage+" số lượng hàng"));
+ if (roSe>=30){
+     alert(wage*0.3);
+ }else if (roSe>=20){
+     alert(wage*0.2)
+ }else if (wage>=10){
+     alert(wage*0.1);
+ }else{
+     alert("Bạn chưa đủ chỉ tiêu để nhận hoa hồng")
+ }
+</script>
+</body>
+</html>

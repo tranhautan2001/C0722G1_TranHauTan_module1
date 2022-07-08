@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thuNhap= parseInt(prompt("thu nhập trong tháng này"));
+    let thueThuNhap="";
+    if(thuNhap<10000000){
+        alert("k tính thuế thu nhập cá nhân");
+    }else if (thuNhap<20000000){
+        thueThuNhap=thuNhap*10/100;
+        alert("thuế thu nhập là " + thueThuNhap);
+    }else{
+        thueThuNhap=thuNhap*20/100;
+        alert("thuế thu nhập là "+ thueThuNhap);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+</style>
+<body>
+<h1>Tính Chỉ Số Cân Nặng</h1>
+<table>
+       <tr>
+           <th>Nhập Cân Nặng:(kg)</th>
+           <td> <input type="text" id="weight"></td>
+       </tr>
+        <tr>
+            <th>Nhập Chiều Cao:(m)</th>
+            <td> <input type="text" id="height"></td>
+        </tr>
+    <tr>
+        <td> <button type="button" onclick=tiLe() >Kiểm Tra</button></td>
+     <td><p>Kết quả:<span id="result"></span></p></td>
+
+
+    </tr>
+</table>
+<script>
+
+    function tiLe(){
+        let  canNang = document.getElementById("weight").value;
+        let  chieuCao = document.getElementById("height").value;
+       let bmi =  canNang/(chieuCao*chieuCao);
+        let text ="";
+        if (bmi < 18){
+            text+="Underweight->  Thiếu cân";
+        }
+        else if (bmi < 25.0){
+           text+="Normal-> Vừa cân ";
+        }
+        else if (bmi < 30.0){
+            text+="Overweight-> Hơi mập";
+        } else{
+            text+="Obese-> Quá mập";
+        }
+        document.getElementById("result").innerHTML = text;
+    }
+
+</script>
+
+</body>
+</html>
