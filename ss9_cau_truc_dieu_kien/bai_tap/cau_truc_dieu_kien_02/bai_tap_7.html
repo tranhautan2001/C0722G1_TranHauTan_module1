@@ -6,15 +6,15 @@
 </head>
 <body>
 <script>
-    let a =parseFloat(prompt("nhập số a"));
-    let b =parseFloat(prompt("nhập số b"));
-    let c =parseFloat(prompt("nhập số c"));
-    let x = b*b-4*a*c;
-    if(x<0){
+    let soA =parseFloat(prompt("nhập số a"));
+    let soB =parseFloat(prompt("nhập số b"));
+    let soC =parseFloat(prompt("nhập số c"));
+    let nghiemX = soB*soB-4*soA*soC;
+    if(nghiemX<0){
        alert("phương trình vô nghiệm");
-    }else if (x==0){
+    }else if (nghiemX==0){
         alert("phương trình có 2 nghiệm kép");
-    }else if (x>0){
+    }else if (nghiemX>0){
         alert("phương trình có 2 nghiệm phân biệt");
     }
 </script>
