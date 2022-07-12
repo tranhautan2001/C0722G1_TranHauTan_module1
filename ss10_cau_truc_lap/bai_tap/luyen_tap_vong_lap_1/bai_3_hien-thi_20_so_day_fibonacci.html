@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Hiển thị ra 20 số trong dãy fibonacci đầu tiên
+    let soThuNhat =0;
+    let soThuHai = 1;
+    let soTiepTheo = 0;
+    let daySo =parseInt(prompt('Nhập số lượng số của dãy'));
+    for(let i = 0;i<daySo ;i++){
+        if(i<=1){
+            soTiepTheo = i;
+        }
+        else{
+            soTiepTheo = soThuNhat+soThuHai;
+            soThuNhat = soThuHai;
+            soThuHai = soTiepTheo ;
+        }
+        document.write(soTiepTheo+"<br>");
+    }
+</script>
+
+</body>
+</html>
