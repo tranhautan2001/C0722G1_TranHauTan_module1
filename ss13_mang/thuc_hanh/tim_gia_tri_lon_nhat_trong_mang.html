@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // tìm giá trị lớn nhất trong mảng//
+    let number=[-1,3,6,8,5,9];
+    let max = number[0];
+    let index = 0
+    for (let i = 0; i <number.length-1; i++) {
+        if (max < number[i]){
+            max = number[i];
+            index = i
+        }
+    }
+    alert("số lớn nhất : " + max + " vị trí thứ " + index);
+
+</script>
+
+</body>
+</html>

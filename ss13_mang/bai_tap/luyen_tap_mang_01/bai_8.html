@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //  Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử.
+  //  Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
+    let array  = [1,2,3,4,5,6,7,8,9,10];
+    array.sort (function (a, b) {
+        if (b > a) {
+            return 1;
+         } else if (a <= b) {
+            return 0;
+        } else {
+            return -1;
+        }
+    });
+    document.write(array);
+</script>
+</body>
+</html>
