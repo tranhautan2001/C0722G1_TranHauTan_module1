@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // khai báo một biến đếm để đếm số lần xuất hiện
+    function doSth() {
+        let check=prompt();
+        let checkIndex=anyThing.indexOf(check);
+        if (checkIndex > -1){
+            let count = 0 ;
+            for (let i = 0; i <anyThing.length ; i++) {
+                if (anyThing[i]== check){
+                    count++;
+                }
+
+            }
+            return count;
+        }else {
+            return -1
+        }
+    }
+    let anyThing =["1","2","3","a","5","a"];
+    alert(doSth())
+</script>
+</body>
+</html>

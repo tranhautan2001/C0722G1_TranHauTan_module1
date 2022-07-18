@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 =prompt("nhập số thứ nhất");
+    let number2 =prompt("nhập số thứ 2");
+    let number3 =prompt("nhập số thứ 3 ");
+
+    function smallestValue(number1,number2,number3) {
+        if (number1 < number2 && number1 < number3) {
+            return number1;
+        }else if (number2<number1 && number2<number3){
+            return number2;
+        }else{
+            return number3;
+        }
+    }
+    alert(smallestValue(number1,number2,number3));
+</script>
+</body>
+</html>

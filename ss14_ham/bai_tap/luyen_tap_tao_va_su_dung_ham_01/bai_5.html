@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+
+    function check_array(arr) {
+        let index_arr1 = 0;
+        let result = "";
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr == arr1[i]) {
+                index_arr1 = i;
+                for(let j = 0; j < arr2.length; j++) {
+                    if (index_arr1 == j) {
+                        result = arr2[j];
+                        return result;
+                    } else {
+                        result = "Không tìm thấy chòm sao"
+                        return result;
+                    }
+                }
+            } else {
+                result = "Không tìm thấy sao";
+                return result;
+            }
+        }
+
+    }
+    let arr = prompt("Nhập vào ngôi sao: ")
+    document.write(check_array(arr));
+</script>
+</body>
+</html>
