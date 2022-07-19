@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle{
+        constructor(longs,width) {
+            this.longs = longs;
+            this.width = width;
+        }
+        getLongs() {
+            return this.longs;
+        }
+        getWidth(){
+            return this.width;
+        }
+        getArea(){
+            return this.longs * this.width;
+        }
+        getPerimeter(){
+            return (this.longs + this.width)*2;
+        }
+    }
+    let rectangle = new Rectangle(2,3);
+    let long = rectangle.getLongs();
+    let width = rectangle.getWidth();
+    let area = rectangle.getArea();
+    let perimeter = rectangle.getPerimeter();
+    alert('Chieu dai la: '+ long+ '| Chieu rong la: '+ width+ '| Dien tich cua hcn la: '+ area + '| Chu vi hcn la: '+ perimeter);
+</script>
+</body>
+</html>

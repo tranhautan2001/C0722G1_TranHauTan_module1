@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(c){
+            this.c = c;
+        }
+        getC(){
+            return this.c;
+        }
+        getF(){
+            return (this.c*1.8)+32;
+        }
+        getK(){
+            return this.c + 273.15;
+        }
+    }
+    let temperature = new Temperature(32);
+    let c = temperature.getC();
+    let f = temperature.getF();
+    let k = temperature.getK();
+    document.write(c+ " do c"+" bang: "+ "<br>"+f+" do f"+"<br>" +k+" do k");
+</script>
+</body>
+</html>
