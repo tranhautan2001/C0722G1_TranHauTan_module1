@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mangA = [1, 5, 6, 9, 7, 4];
+    let mangB = [1, 5, 8, 6, 9, 3, 7, 4];
+    let mangC = [];
+    for (let i = 0; i < mangB.length; i++) {
+            if (!mangA.includes(mangB[i])) {
+                mangC.push(mangB[i]);
+            }
+    }
+    document.write(mangC);
+
+</script>
+</body>
+</html>

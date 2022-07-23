@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let luongNhanvien = prompt("nhập số lương");
+  if (luongNhanvien =>15000000){
+      thue = luongNhanvien *(20/100);
+      luongRong = luongNhanvien - thue;
+      document.write("20% thuế thu nhập khi lương là 15 triệu là :" +thue +"<br>"+ "lương ròng là :" + luongRong);
+  }
+  if (luongNhanvien>7000000 && luongNhanvien<15000000){
+      thue = luongNhanvien * (10/100);
+      luongRong = luongNhanvien - thue;
+      document.write("10% thuế thu nhập nếu lương từ 7 đến 15 triệu là :" + thue+"<br>"+ "lương ròng là :" + luongRong);
+  }
+  if (luongNhanvien<7000000){
+      thue = luongNhanvien * (5/100);
+      luongRong = luongNhanvien - thue;
+      document.write("5% thuế thu nhập nếu lương dưới 7 triệu :" + thue+"<br>"+ "lương ròng là :" + luongRong);
+  }
+</script>
+</body>
+</html>

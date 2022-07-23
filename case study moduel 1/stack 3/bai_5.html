@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3 >Menu</h3>
+    <p>1-Cafe    :10</p>
+    <p>2-Cam vắt :20</p>
+    <p>3-Nước mía:10</p>
+    <p>4-Nước dừa:20</p>
+    <p>5-Sting   :15</p>
+    <p>6-Bò húc  :20</p>
+    <p>7-Thoát</p>
+    <button onclick="Order()">Order</button>
+        <script>
+        function Order(){
+            let cafe = 10;
+            let camVat=20;
+            let nuocMia=10;
+            let nuocDua=20;
+            let sting = 15;
+            let boHuc = 20;
+            let doUong;
+            let soLuong;
+            do{
+                doUong = parseInt(prompt("Nhập số tương ứng với đồ uống với Menu"));
+                if(doUong!=7){
+                    soLuong = parseInt(prompt("Nhập số lượng cần mua:"));
+                }
+                switch (doUong) {
+                    case 1:
+                        alert("Bạn uống cafe số lượng "+soLuong+" số tiền thanh toán là "+soLuong*cafe);
+                        break;
+                    case 2:
+                        alert("Bạn uống cam vắt số lượng "+soLuong+" số tiền thanh toán là "+soLuong*camVat);
+                        break;
+                    case 3:
+                        alert("Bạn uống nước mía số lượng "+soLuong+" số tiền thanh toán là "+soLuong*nuocMia);
+                        break;
+                    case 4:
+                        alert("Bạn uống nước dừa số lượng "+soLuong+" số tiền thanh toán là "+soLuong*nuocDua);
+                        break;
+                    case 5:
+                        alert("Bạn uống sting số lượng "+soLuong+" số tiền thanh toán là "+soLuong*sting);
+                        break;
+                    case 6:
+                        alert("Bạn uống bò húc số lượng "+soLuong+" số tiền thanh toán là "+soLuong*boHuc);
+                        break;
+                    case 7 :
+                        alert("Bạn không gọi món");
+                        break;
+                    default :
+                        alert("Bạn gọi sai món rồi!");
+                }
+            }while (doUong!=7);
+        }
+</script>
+</body>
+</html>

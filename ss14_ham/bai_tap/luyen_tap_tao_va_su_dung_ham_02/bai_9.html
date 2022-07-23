@@ -1,30 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<script>
-    // khai báo một biến đếm để đếm số lần xuất hiện
-    function doSth() {
-        let check=prompt();
-        let checkIndex=anyThing.indexOf(check);
-        if (checkIndex > -1){
-            let count = 0 ;
-            for (let i = 0; i <anyThing.length ; i++) {
-                if (anyThing[i]== check){
-                    count++;
-                }
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Title</title>
+        </head>
+        <body>
+        <script>
+            let anyThing =["1","2","3","a","5","a"];
+        let c ="2"
+        alert(doSth(anyThing,c))
+        let arr1 =["1","2","3","a","5","4"];
+        let c3 ="2";
+            // khai báo một biến đếm để đếm số lần xuất hiện
+            function doSth(arr,kt) {
+                let checkIndex=arr.indexOf(kt);
+                if (checkIndex > -1){
+                    let count = 0 ;
+                    for (let i = 0; i <arr.length ; i++) {
+                        if (arr[i]== kt){
+                            count++;
+                        }
 
+                    }
+                    return count;
+                }else {
+                    return -1
+                }
             }
-            return count;
-        }else {
-            return -1
-        }
-    }
-    let anyThing =["1","2","3","a","5","a"];
-    alert(doSth())
-</script>
-</body>
-</html>
+
+            alert(doSth(arr1,c))
+            alert(doSth(arr1,c3))
+        </script>
+        </body>
+        </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhập số:");
+    number.toString();
+    let text = "";
+    for(let i = 0;i<number.length;i++) {
+        switch (number[i]) {
+            case '1':
+                text+=" một ";
+                break;
+            case '2':
+                text+=" hai ";
+                break;
+            case '3':
+                text+=" ba ";
+                break;
+            case '4':
+                text+= " bốn ";
+                break;
+            case '5':
+                text +=" năm ";
+                break;
+            case '6':
+                text +=" sáu "
+                break;
+            case '7':
+                text +=" bảy ";
+                break;
+            case '8':
+                text+=" tám ";
+                break;
+            case '9':
+                text+=" chín ";
+                break;
+            case '0':
+                text+=" không ";
+                break;
+        }
+    }
+    document.write(text);
+</script>
+</body>
+</html>
