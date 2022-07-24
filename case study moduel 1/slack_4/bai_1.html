@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string = "tRuong   Tan HAI";
+    function chuanHoaKiTu(str) {
+        let array = str.split('');
+        for (let i = 0; i < array.length; i++) {
+            if (i == 0 || array[i-1] == ' '){
+                if (array[i] == ' '){
+                    array.splice(i, 1);
+                    i--;
+                }else{
+                    array[i] = array[i].toUpperCase();
+                }
+            }
+        }
+        return array.join('');
+    }
+    document.write(chuanHoaKiTu(string.toLowerCase()));
+</script>
+</body>
+</html>
