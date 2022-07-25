@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1 = 'object Oriented progaming';
+    alert(vietTat(str1))
+
+    function vietTat(str) {
+        let arrayA = [];
+        let ketQua = ""
+        arrayA = str.split(" ");
+        for (let i = 0; i < arrayA.length; i++) {
+            ketQua += arrayA[i][0].toUpperCase();
+        }
+        return ketQua;
+    }
+
+</script>
+</body>
+</html>

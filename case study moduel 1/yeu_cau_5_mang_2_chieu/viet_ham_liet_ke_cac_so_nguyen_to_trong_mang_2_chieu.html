@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có trong mảng đó. </title>
+</head>
+<body>
+<script>
+let a = [[1,2,3,4],
+         [3,4,5,6]
+        ];
+alert(kiemtra(a));
+function kiemtra(arr) {
+    let count =0;
+    for (let i = 0; i <arr.length; i++) {
+        for (let j = 0; j <arr[i].length ; j++) {
+           if (soNguyenTo(arr[i][j])){
+               count++;
+           }
+
+        }
+    }
+    return count;
+}
+
+    function soNguyenTo(n) {
+       if (n<2){
+           return false;
+       }else {
+           for (let i = 2; i < n; i++) {
+               if (n % i ===0 ){
+                   return false;
+               }
+           }
+           return true;
+       }
+    }
+</script>
+</body>
+</html>

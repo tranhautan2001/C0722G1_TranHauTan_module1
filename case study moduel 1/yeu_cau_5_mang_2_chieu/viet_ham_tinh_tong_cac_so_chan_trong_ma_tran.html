@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Viết hàm tính tổng các số chẵn trong ma trận có kích thước m*n. Với m, n là các số nhập từ bàn phím. </title>
 </head>
 <body>
 <script>
@@ -14,7 +14,7 @@
        for (let j = 0; j <n; j++) {
            arr[i][j] = +prompt("Nhập giá trị cho mỗi phần tử");
        }
-   }
+   }console.log(arr)
    function tong(array) {
        let tong =0;
        for (let i = 0; i <m; i++) {
@@ -26,7 +26,7 @@
        }
          return tong;
    }
-   document.write("tong là : " +tong(arr));
+   console.log("tong là : " +tong(arr));
 
 
 </script>
