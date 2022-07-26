@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình vào một mảng 2 chiều kích thước m*n.
+        phần tử từ bản phím hiển thị một mảng mới nhập vào
+        tính trung bình cộng của các phần tử ở cột số chẵn</title>
+</head>
+<body>
+<script>
+  let m = parseInt(prompt("nhập m"))
+  let n = parseInt(prompt("nhập n"))
+  let arr = new Array(m)
+  for (let i = 0; i <m; i++) {
+      arr[i] = new Array(n);
+      for (let j = 0; j <n; j++) {
+          arr[i][j] = parseInt(prompt("nhập số phần tử"))
+      }
+  }
+   function display(number) {
+      let sum =0
+      let count =0;
+       for (let i = 0; i <number.length; i++) {
+           for (let j = 0; j <number[i].length; j++) {
+               if (j %2 == 0){
+                   sum += number[i][j]
+                   count++;
+               }
+           }
+       }
+      return sum/count;
+    }
+    console.log(display(arr));
+
+</script>
+</body>
+
+</html>

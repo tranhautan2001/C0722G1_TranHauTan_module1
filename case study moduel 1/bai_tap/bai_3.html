@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let array =[1,5,6,13,9,12,8,0,5,1];
+   function hienThiDayFibonaci(number1) {
+       for (let i = 0; i <array.length; i++) {
+         array[i] = hienThiFiBoNaCi()
+           }
+
+
+
+   }
+
+    function hienThiFiBoNaCi() {
+        let soThuNhat = 0;
+        let soThuHai = 1;
+        let soTiepTheo = 0;
+        for (let i = 0; i < 1000; i++) {
+            if (i <= 1) {
+                soTiepTheo = i;
+            } else {
+                soTiepTheo = soThuNhat + soThuHai;
+
+                soThuNhat = soThuHai;
+                soThuHai = soTiepTheo;
+            }
+        }
+        return soTiepTheo;
+    }
+console.log()
+</script>
+</body>
+</html>
