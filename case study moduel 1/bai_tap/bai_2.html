@@ -8,27 +8,29 @@
 <script>
     let chuoiA ='HellOCodegym'
     let array =[];
-    let array1 =[];
     chuoiA.toString().split("");
     function inHoa(str) {
+        count= 0;
         for (let i = 0; i <str.length; i++) {
             if (chuoiA.charCodeAt(i)>=65 && chuoiA.charCodeAt(i)<=90){
-                array.push(str[i]);
+                count++
+                array.push(count);
             }
         }
-        return array;
+        return count;
     }
-
     function inThuong(str1) {
+         count1 = 0;
         for (let i = 0; i <str1.length; i++) {
             if (chuoiA.charCodeAt(i)>=97 && chuoiA.charCodeAt(i)<=122){
-                array1.push(str1[i]);
+                count1++;
+                array.push(count1);
             }
         }
-        return array1  ;
+        return count1 ;
     }
-    console.log(inHoa(chuoiA));
-    console.log(inThuong(chuoiA));
+    alert(inHoa(chuoiA));
+    alert(inThuong(chuoiA));
 </script>
 </body>
 </html>
