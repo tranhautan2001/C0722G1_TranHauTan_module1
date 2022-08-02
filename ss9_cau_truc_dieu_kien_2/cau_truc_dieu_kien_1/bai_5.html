@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kiemTra = parseInt(prompt("nhập điểm kiểm tra"));
+    let giuaKy = parseInt(prompt("nhập điểm giữa kỳ"));
+    let cuoiKy = parseInt(prompt("nhập điểm cuối kỳ"));
+    let diemTrungBinh = (kiemTra*0.2)+(giuaKy*0.3)+(cuoiKy*0.5);
+    if (diemTrungBinh>8){
+        alert("đạt học sinh giỏi");
+    }else if (diemTrungBinh<8 && diemTrungBinh>6.5){
+        alert("đạt học sinh khá");
+    }else if (diemTrungBinh<6.5 && diemTrungBinh>5){
+        alert("đạt diểm trung bình");
+    }else {
+        alert("đạt điểm yếu");
+    }
+</script>
+</body>
+</html>

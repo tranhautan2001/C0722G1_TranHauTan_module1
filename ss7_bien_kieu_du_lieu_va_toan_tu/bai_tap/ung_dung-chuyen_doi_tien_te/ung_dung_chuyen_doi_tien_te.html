@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+      <th style="text-align: center"> Amount </th>
+      <th>From Currency</th>
+      <th>To Currency</th>
+    </tr>
+    <tr>
+        <td> <input type="text" id="amount" ></td>
+        <td>
+            <select id ="from" >
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="to">
+                <option value="VND">VND</option>
+                <option VALUE="USD">USD</option>
+            </select>
+        </td>
+        <td> <button onclick="changeMoney()">Convert </button> </td>
+    </tr>
+    <tr>
+        <td id="ketqua"> Kết Quả: </td>
+    </tr>
+</table>
+<script>
+        function changeMoney() {
+            let enter = document.getElementById('amount').value;
+            let from = document.getElementById('from').value;
+            let to = document.getElementById('to').value;
+
+            if (from==to){
+                document.getElementById("ketqua").innerHTML = enter;
+            }else if (from =='VND' && to=='USD'){
+                document.getElementById("ketqua").innerHTML = enter/23000;
+            }else if (from =='USD' && to=='VND'){
+                document.getElementById("ketqua").innerHTML = enter*23000;
+            }
+
+    }
+</script>
+</body>
+</html>

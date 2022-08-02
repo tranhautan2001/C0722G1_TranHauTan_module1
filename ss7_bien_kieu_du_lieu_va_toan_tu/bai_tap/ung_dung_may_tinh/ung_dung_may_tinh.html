@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> Caculator </h2>
+<table>
+    <tr>
+        <td> <input type="text" id="tong1"> </td>
+        <td> <input type="text" id="tong2"> </td>
+    </tr>
+    <tr>
+      <td>
+          <button type="button" onclick="ketQua('cong')"> Cộng(+) </button>
+         <button type="button" onclick="ketQua('tru')"> Trừ(-) </button>
+      </td>
+      <td>
+          <button type="button" onclick="ketQua('nhan')"> Nhân(*)</button>
+          <button type="button" onclick="ketQua('chia')"> Chia(/) </button>
+      </td>
+
+
+    <script>
+        function ketQua(value) {
+            let tong1 = document.getElementById("tong1").value;
+            let tong2 = document.getElementById("tong2").value;
+            tong1 = parseInt(tong1);
+            tong2 = parseInt(tong2);
+            if (value== 'cong'){
+                alert("tổng phép cộng là: "+(tong1+tong2));
+            }
+            if (value== 'tru'){
+                alert("tổng phép trừ là: "+(tong1-tong2));
+            }
+            if (value== 'nhan'){
+                alert("tổng phép nhân là: "+tong1*tong2);
+            }
+            if (value== 'chia'){
+                alert("tổng phép chia là: "+tong1/tong2);
+            }
+
+        }
+    </script>
+</table>
+</body>
+</html>
