@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let canhA = parseInt(prompt("nhập cạnh A"));
+    let canhB = parseInt(prompt("nhập cạnh B"));
+    let canhC = parseInt(prompt("nhập cạnh C"));
+    if (canhA >0 && canhB>0 && canhC >0 && (canhA+canhB)>canhC && (canhB+canhC) >canhA && (canhA+canhC)>canhB){
+        alert("là cạnh của tam giác");
+    }else {
+        alert("không phải là cạnh của tam giác");
+    }
+</script>
+</body>
+</html>
