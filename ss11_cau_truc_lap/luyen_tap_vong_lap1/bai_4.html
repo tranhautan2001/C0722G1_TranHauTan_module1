@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let st1 = 0;
+let st2 =1;
+let st3 ;
+for (let i = 0; i <20; i++) {
+    if (st1% 5 === 0){
+        document.write(st1);
+        break;
+    }
+    st3 = st1+st2;
+    st1 = st2;
+    st2 = st3;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let n = prompt("nhập 30 số");
+let count =0;
+let number =0;
+let tong =0;
+while (count<n){
+    if (number % 7===0){
+        count++;
+        tong+=number;
+    }
+    number++;
+}
+document.write(tong);
+</script>
+</body>
+</html>
