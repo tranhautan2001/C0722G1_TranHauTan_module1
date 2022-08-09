@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // nối phần tử của mảng array1 với array2 sang một mảng arr khác//
+    let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let array2 = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+    let arr = [];
+    for (let i = 0; i < array1.length; i++) {
+        arr.push(array1[i]);
+    }
+    for (let j = 0; j < array2.length; j++) {
+        arr.push(array2[j]);
+    }
+    document.write(arr);
+</script>
+</body>
+</html>

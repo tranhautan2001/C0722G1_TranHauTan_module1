@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // cách 1//
+    //
+    // giá trị trong mảng giảm dần không dùng hàm //
+
+    let array = [10,2,5,40,100,63,6,4,15,32];
+    let temp =0;
+    for (let i = 0; i <array.length; i++) {
+        for (let j = 0; j <array.length ; j++) {
+            if (array[i]>array[j]){
+                temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    }
+    document.write(array)
+
+     //cách 2//
+
+    // giá trị trong mảng giảm dần dùng hàm //
+            //hàm sort//
+    // let array = [10,2,5,40,100,63,6,4,15,32];
+    // array.sort(function (a,b) {return a - b});
+    // document.write(array1);
+    //
+
+
+
+</script>
+</body>
+</html>

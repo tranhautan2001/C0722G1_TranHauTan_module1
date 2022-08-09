@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng
+    //và gán 0 cho phần tử cuối cùng của mảng
+    let arrayC = [1, 2, 6, 8, 9, 10, 23, 65, 14, 95];
+    let v = prompt("nhập phần tử số nguyên");
+    for (let i = 0; i < arrayC.length; i++) {
+        if (arrayC[i] == v) {
+            for (let j = 0; j < arrayC.length - 1; j++) {
+                arrayC[j] = arrayC[j + 1]
+            }
+            arrayC[arrayC.length - 1] = 0;
+        }
+
+    }
+    document.write(arrayC);
+</script>
+</body>
+</html>

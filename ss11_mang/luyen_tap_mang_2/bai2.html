@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược
+        let array = [ 'c', 's', 'c', '2', '6', '1' ]
+        let n =0 ;
+        let m = array.length-1
+        while (m>n){
+            let temp = array[m]
+            array[m] = array[n];
+            array[n] = temp;
+            n++;
+            m--;
+        }
+        document.write(array);
+</script>
+</body>
+</html>

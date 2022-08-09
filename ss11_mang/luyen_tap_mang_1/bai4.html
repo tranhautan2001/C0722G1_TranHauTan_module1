@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // đảo ngược mảng không cần hàm//
+    let arrayB = [2,3,4,5,6,7]
+    let arr = 0;
+    let arr1 = arrayB.length-1;
+    while (arr<arr1){
+        let b = arrayB[arr];
+        arrayB[arr] = arrayB[arr1];
+        arrayB[arr1] = b;
+        arr++;
+        arr1--;
+    }
+    document.write(arrayB)
+
+
+   //  // đảo ngược mảng bằng hàm reverse()//
+   //  let arrayB = [2,3,4,5,6,7]
+   // document.write(arrayB.reverse().toString());
+
+</script>
+</body>
+</html>
