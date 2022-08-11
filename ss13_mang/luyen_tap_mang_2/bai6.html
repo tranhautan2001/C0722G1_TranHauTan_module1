@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ // dùng hàm splice để chuyển ký tự từ (-) sang (_)
+let array = ["a","b","c","-","d","-","t","g"];
+for (let i = 0; i <array.length; i++) {
+    if (array[i] ==="-"){
+        array.splice(i,1,"_");
+    }
+}
+document.write(array+"<br>");
+
+// tìm phần tử cần thay thế và tìm giá trị của phần tử đó
+ // sau đó gán giá trị đó cho giá trị mới và xem kết quả
+//     let array = ["a","b","c","d","-","t","g"];
+//       array[4] = "_";
+// document.write(array+"<br>");
+</script>
+</body>
+</html>

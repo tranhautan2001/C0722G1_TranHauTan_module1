@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // cách 1:tạo hàm kiemTra.cho người dùng nhập 3 vào số, kiểm tra số nào nhỏ nhất trong 3 số.
+    let number1 = prompt("nhập số thứ 1");
+    let number2 = prompt("nhập số thứ 2");
+    let number3 = prompt("nhập số thứ 3");
+    function kiemTra(num1,num2,num3) {
+        if (num1<num2 && num1<num3){
+            return num1;
+        }else if (num2<num1 && num2<num3){
+            return num2;
+        }else {
+            return num3;
+        }
+    }
+    document.write(kiemTra(number1,number2,number3));
+
+
+   // cách 2:tạo hàm ketQua.Nhập số vào kiểm tra số nào nhỏ nhất trong 3 số.
+   //  function ketQua(num1,num2,num3) {
+   //      if (num1>num3 && num2>num3){
+   //          return num3;
+   //      }else if (num2>num1 && num3>num1 ){
+   //          return num1;
+   //      }else {
+   //          return num2;
+   //      }
+   //  }
+   //  document.write(ketQua(4,3,6));
+</script>
+</body>
+</html>

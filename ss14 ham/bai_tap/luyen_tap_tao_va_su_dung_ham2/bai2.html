@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được</title>
+</head>
+<body>
+<script>
+    function Area(number) {
+         ketQua = (number*number)*Math.PI;
+       return ketQua;
+    }
+
+    function Primer(number1) {
+        result = (number1*2)*Math.PI;
+        return result;
+    }
+    let ketQua;
+    let result;
+    ketQua = Area(7)
+    result = Primer(5);
+    document.write("diện tích hình chữ nhật là: "+ketQua+"<br>");
+    document.write("chu vi hình chữ nhật là: "+result);
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.</title>
+</head>
+<body>
+<script>
+    // cách 1: cho người dùng nhập vào số giai thừa cần kiểm tra.
+    function factorial(number) {
+        result = 1;
+        while (number > 1) {
+            result *= number;
+            number -= 1;
+        }
+        return result;
+    }
+    let result ;
+    let int = prompt("nhập");
+    int = parseInt(int);
+    document.write(factorial(int));
+
+    //cách 2: nhập trực tiếp số vào để tính giai thừa của số đó.
+    // function factorial(number) {
+    //     result = 1;
+    //     while (number > 1) {
+    //         result = result* number;
+    //         number -= 1;
+    //     }
+    //     return result;
+    // }
+    // let result;
+    // result = factorial(5);
+    // document.write(result);
+
+</script>
+</body>
+</html>

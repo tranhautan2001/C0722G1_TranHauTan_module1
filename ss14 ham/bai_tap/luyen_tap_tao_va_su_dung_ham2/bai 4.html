@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.
+        Nếu là ký tự số hàm trả về true, ngược lại trả về false.</title>
+</head>
+<body>
+<script>
+    // cách 1: cho người dùng nhâp vào để kiểm tra
+    function ketQua(number) {
+        if (number>=0 || number<0){
+            return true;
+        }else {
+            return false ;
+        }
+    }
+    let result = prompt("nhập");
+    document.write(ketQua(result).toString());
+
+    // cách 2:
+    // function myFunction(x) {
+    //     if (x >= 0 || x < 0 ) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
+    //
+    // let myFunctionOf2 = myFunction(6)
+    // document.write(myFunctionOf2.toString());
+
+</script>
+</body>
+</html>

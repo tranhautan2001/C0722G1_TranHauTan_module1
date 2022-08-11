@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // cách 1 dùng for/of để xuất ra từng giá trị vào chuỗi
+
+    let myColer = ["red", "green", "white", "black"];
+    let str = "";
+    for (let index of myColer) {
+        str =str +index +","
+    }
+    console.log(str)
+
+
+/* cách 2 dùng hàm toString
+
+        let myColer = ["red","green","white","black"]
+        console.log(myColer.toString())*/
+
+/*   cách 3 dùng hàm Join
+
+    let myColer = ["red","green","white","black"];
+    console.log(myColer.join());*/
+
+</script>
+</body>
+</html>
