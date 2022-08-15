@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // in ra số 1000 số nguyên tố.
+    let n =2;
+    let demLuongSNT =0;
+    while (demLuongSNT<1000){
+        let count=0;
+        for (let i = 1; i <=n ; i++) {
+            if (n%i==0){
+                count++;
+            }
+        }
+        if (count==2){
+           document.write(n + "<br>")
+            demLuongSNT++;
+        }
+        n++;
+    }
+</script>
+</body>
+</html>

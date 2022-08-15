@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array1 = ['9', '4', '7', 'm', 'n', '7','7'];
+    let c1 = prompt("nhập")
+    let count = 0;
+    function kiemTra(arr, c) {
+
+        for (let i = 0; i < array1.length; i++) {
+            if (c == arr[i]) {
+                count++;
+            }
+        }
+        if (count>0){
+            return count;
+        }else {
+            return -1;
+        }
+    }
+    document.write(kiemTra(array1, c1));
+</script>
+</body>
+</html>

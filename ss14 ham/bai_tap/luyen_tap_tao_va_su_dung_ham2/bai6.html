@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+        Nếu là nguyên dương trả về true, ngược lại trả về false.</title>
 </head>
 <body>
-
 </body>
+<script>
+    // cách 1: cho người dùng nhập số vào để kiểm tra.
+    function kiemTra(number) {
+        if (number >= 0) {
+            return true;
+        }
+        return false;
+    }
+    let num = prompt("nhâp vào để kiểm tra")
+    document.write(kiemTra(num).toString());
+
+
+    // cách 2: dùng if để kiểm tra điều kiện.
+    // function kiemTra(number) {
+    //     if (number>= 0){
+    //         return true;
+    //     }
+    //    return false;
+    // }
+    // document.write(kiemTra("m").toString());
+
+
+    // cách 3:
+    // function kiemTra(number) {
+    //     return number >= 0;
+    // }
+    // document.write(kiemTra(5).toString());
+</script>
 </html>

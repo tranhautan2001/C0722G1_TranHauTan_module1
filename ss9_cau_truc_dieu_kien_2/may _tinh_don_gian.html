@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+</head>
+<body>
+<h1>calculator</h1>
+<table>
+
+    <tr>
+        <td colspan="4"><input type="text" id="nhap"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="1" onclick="nhap(this.value)"></td>
+        <td><input type="button" value="2" onclick="nhap(this.value)"></td>
+        <td><input type="button" value="3" onclick="nhap(this.value)"></td>
+        <td><input type="button" value="+" onclick="nhap(this.value)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4" onclick="nhap(this.value)"></td>
+        <td><input type="button" value="5" onclick="nhap(this.value)"></td>
+        <td><input type="button" value="6" onclick="nhap(this.value)"></td>
+        <td><input type="button" value="-" onclick="nhap(this.value)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7" onclick="nhap(this.value)"></td>
+        <td><input type="button" value="8" onclick="nhap(this.value)"></td>
+        <td><input type="button" value="9" onclick="nhap(this.value)"></td>
+        <td><input type="button" value="*" onclick="nhap(this.value)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="C" onclick="xoa()"></td>
+        <td><input type="button" value="=" onclick="bang()"></td>
+        <td><input type="button" value="0" onclick="nhap(this.value)"></td>
+        <td><input type="button" value="/" onclick="nhap(this.value)"></td>
+    </tr>
+</table>
+<script>
+    let check =false
+    function nhap(duLieu) {
+        if (!check){
+            let str = document.getElementById("nhap").value;
+            document.getElementById("nhap").value = str+ duLieu;
+        }else {
+            document.getElementById("nhap").value = duLieu;
+            check=false;
+        }
+    }
+    function bang() {
+        check =true;
+        let str = document.getElementById("nhap").value;
+        let ketQua = eval(str);
+        document.getElementById("nhap").value = ketQua;
+    }
+    function xoa() {
+        document.getElementById("nhap").value="";
+    }
+</script>
+</body>
+</html>
