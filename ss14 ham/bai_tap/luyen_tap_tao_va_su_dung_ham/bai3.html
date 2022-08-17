@@ -6,19 +6,32 @@
 </head>
 <body>
 <script>
-let number1 = parseInt(prompt("nhập st1"));
-let number2 = parseInt(prompt("nhập st2"));
-function kiemTra() {
-    let max = number1+number2;
-    if ( number1>number2){
-        return ("st1 lớn hơn st2");
-    }else if (number1<=number2){
-        return max;
-    }
+    // cách 1: truyền 2 tham số vào hàm để kiểm tra hàm.
+function kiemTra(num1,num2) {
+    let tong = 0;
+   if (num1>num2){
+       alert("st1 lớn hơn st2");
+   }else{
+       tong = num1+num2;
+       return tong;
+   }
 }
-alert(kiemTra());
-document.write(kiemTra(tong));
+alert(kiemTra(9,7));
 
+
+     // cách 2: cho người dùng nhập 2 tham số vào để kiểm tra.
+// let number1 = parseInt(prompt("nhập st1"));
+// let number2 = parseInt(prompt("nhập st2"));
+// function kiemTra() {
+//     let max = number1+number2;
+//     if ( number1>number2){
+//         return ("st1 lớn hơn st2");
+//     }else {
+//         return max;
+//     }
+// }
+// alert(kiemTra());
+// document.write(kiemTra(max));
 </script>
 </body>
 </html>

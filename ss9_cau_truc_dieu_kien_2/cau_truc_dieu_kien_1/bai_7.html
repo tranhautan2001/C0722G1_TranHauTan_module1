@@ -6,7 +6,15 @@
 </head>
 <body>
 <script>
-
+    let  tienGoc =+prompt("số tiền gửi");
+    let soThang= +prompt("số tháng gửi");
+    let laiSuat = +prompt("lãi suất theo tháng"); // theo tháng
+    let lai=0;
+    for (let i = 0; i <soThang ; i++) {
+        lai = tienGoc*laiSuat/100;
+        tienGoc = tienGoc+lai;
+    }
+    alert("tổng tiền sau khi gửi "+ tienGoc);
 </script>
 </body>
 </html>

@@ -5,8 +5,11 @@
     <title>Title</title>
 </head>
 <body>
+
+</body>
 <script>
-    let arr1 = [
+    let input = prompt("nhập sao cần kiểm tra")
+    let arrayA = [
         'Polaris',
         'Aldebaran',
         'Deneb',
@@ -15,8 +18,8 @@
         ' Dubhe',
         ' Regulus'
     ];
-    let arr2 = [
-        'Ursa',
+    let arrayB = [
+        'Ursa Minor',
         'Minor',
         'Tarurus',
         'Cygnus',
@@ -25,33 +28,18 @@
         'Ursa Major',
         'Leo'
     ];
-
-    function check_array(arr) {
-        let index_arr1 = 0;
-        let result = "";
-        for (let i = 0; i < arr1.length; i++) {
-            if (arr == arr1[i]) {
-                index_arr1 = i;
-                for (let j = 0; j < arr2.length; j++) {
-                    if (index_arr1 == j) {
-                        result = arr2[j];
-                        return result;
-
-                    } else {
-                        result = "Không tìm thấy chòm sao"
-                        return result;
-                    }
-                }
-            } else {
-                result = "Không tìm thấy sao";
-                return result;
+    function kiemTra(st1,st2,st3) {
+        for (let i = 0; i < arrayA.length; i++) {
+            if (st3 === st1[i]) {
+              alert(st2[i]);
+              break;
+            }
+            while (!arrayA.includes(st3)) {
+                alert('nhập lại đi');
+                st3 = prompt("nhập vào ngôi sao bạn muốn");
             }
         }
     }
-
-    let arr = prompt("Nhập vào ngôi sao: ");
-    document.write(check_array(arr));
-
+    kiemTra(arrayA,arrayB,input)
 </script>
-</body>
 </html>
