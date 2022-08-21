@@ -8,25 +8,25 @@
 <script>
 
     class Rectangle{
-        constructor(longs,width) {
-            this.longs = longs;
+        constructor(long,width) {
+            this.long = long;
             this.width = width;
         }
-        getLongs() {
-            return this.longs;
+        getLong() {
+            return this.long;
         }
         getWidth(){
             return this.width;
         }
         getArea(){A
-            return this.longs * this.width;
+            return this.long * this.width;
         }
         getPerimeter(){
-            return (this.longs + this.width)*2;
+            return (this.long + this.width)*2;
         }
     }
     let rectangle = new Rectangle(2,3);
-    let long = rectangle.getLongs();
+    let long = rectangle.getLong();
     let width = rectangle.getWidth();
     let area = rectangle.getArea();
     let perimeter = rectangle.getPerimeter();
