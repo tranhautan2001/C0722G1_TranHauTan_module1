@@ -12,16 +12,11 @@
     // Chú ý các phần tử giống nhau chỉ tính là 1 lần xuất hiện
     // Ví dụ:  A=[7,2,5,3,5,3] và B=[7,2,5,4,6,3,5,3] thì kết quả missingValue(A, B) = [4, 6]
 
-
-    let arrayA = [7,2,5,3,5,3];
-    let arrayB = [7,2,5,4,6,3,5,3];
-    let arrayC =[];
-    for (let i = 0; i <arrayB.length; i++) {
-        if (!arrayA.includes(arrayB[i])){  // phủ định ngược lại | của phần tử trong mảng A có trong mảng B
-            arrayC.push(arrayB[i]);    // thì sẽ push phần tử khác của mảng B sang C qua từng lần lặp
-        }
+    let kiTu = ["không","một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];
+    let nhap= prompt ("nhập : ");
+    for (let i = 0; i <nhap.length ; i++) {
+        document.write([kiTu[nhap[i]]]+" ");
     }
-    document.write(arrayC); // trả kết quả ở mảng C
 
 </script>
 </body>
