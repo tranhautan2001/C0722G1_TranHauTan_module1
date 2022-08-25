@@ -6,27 +6,30 @@
 </head>
 <body>
 <script>
-   let m = parseInt(prompt("Nhập M"));
-   let n = parseInt(prompt("Nhập N"));
-   let arr = new Array(m)
-   for (let i = 0; i <m; i++) {
-       arr[i] = new Array(n)
-       for (let j = 0; j <n; j++) {
-           arr[i][j] = +prompt("Nhập giá trị cho mỗi phần tử");
-       }
-   }console.log(arr)
-   function tong(array) {
-       let tong =0;
-       for (let i = 0; i <m; i++) {
-           for(let j =0;j<n;j++){
-               if(arr[i][j]%2===0){
-                   tong=tong+arr[i][j];
-               }
-           }
-       }
-         return tong;
-   }
-   console.log("tong là : " +tong(arr));
+    let n = parseInt(prompt("nhập số N"));
+    let m = parseInt(prompt("nhập số M"));
+    let arr = new Array(n);
+    for (let i = 0; i <n; i++) {
+        arr[i] = new Array(m)
+        for (let j = 0; j <m; j++) {
+            arr[i][j] = parseInt(prompt("nhập số phần tử: "));
+        }
+    }
+    console.log(arr)
+    function kiemTra(number) {
+        let tong = 0;
+        for (let i = 0; i <number.length; i++) {
+            for (let j = 0; j <number.length; j++) {
+                if (arr[i][j] %2 ===0){
+                    tong+= arr[i][j];
+                }
+
+            }
+
+        }
+        return tong;
+    }
+    document.write(kiemTra(arr))
 
 
 </script>
