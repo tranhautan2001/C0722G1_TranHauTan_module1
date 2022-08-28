@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 1. Viết 1 hàm nhận vào 1 số nguyên bất kì. Hiển thị các số KHÔNG phải số nguyên tố từ 0 đến số đấy.
+    function kiemTra(number) {
+        let arrayC = [];
+        for (let i = 0; i <number; i++) {
+            if (soNguyenTo(i) == false) {
+                arrayC.push(i);
+            }
+
+        }
+        return arrayC;
+    }
+
+    function soNguyenTo(number) {
+        if (number < 2) {
+            return false;
+        }
+        for (let i = 2; i < number; i++) {
+            if (number % i === 0) {
+                return false;
+            }
+
+        }
+        return true;
+    }
+    let num =+prompt("nhập số");
+    document.write(kiemTra(num));
+
+
+</script>
+</body>
+</html>

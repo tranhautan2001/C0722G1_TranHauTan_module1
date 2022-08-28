@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 3: Viết hàm có tham số truyền vào là một mảng ,tìm các số fibonaci có trong
+    // mảng(số này đã làm bài tập ở jame). Hàm trả về 1 mảng số fibonaci được tìm thấy
+    // trong mảng ( Yêu cầu sắp xếp tăng dần).
+    // Gợi ý đây là dãy số fibonaci: 0,1,1,2,3,5,8,13,21,…
+
+    let array =[1,5,6,13,9,12,8,0,5,1]
+    let arr1 = [];
+    function dayFibonaci(number) {
+        let soThuNhat = 0;
+        let soThuHai = 1;
+        let soTiepTheo = 0;
+        let arr = [];
+        for (let i = 0; i < 1000; i++) {
+            if (i <= 1) {
+                soTiepTheo = i;
+            } else {
+                arr.push(soThuNhat);
+                soTiepTheo = soThuNhat + soThuHai;
+                soThuNhat = soThuHai;
+                soThuHai = soTiepTheo;
+            }
+        }
+        for (let i = 0; i < number.length; i++) {
+            for (let j = 0; j < number.length; j++) {
+                if (arr.includes(number[i])) {
+                    arr1.push(number[i]);
+                    break;
+                }
+            }
+        }
+
+        arr1.sort(function (a, b) {
+            if (b > a) {
+                return -1;
+            } else if (a > b) {
+                return 1;
+            } else {
+                return 0;
+            }
+        })
+    }
+    dayFibonaci(array);
+    document.write(arr1);
+</script>
+</body>
+</html>

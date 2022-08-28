@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 3. Viết 1 hàm nhận vào 1 số nguyên duy nhất hàm trả về mảng số nguyên từ 0 đến số được truyền vào và phải thỏa mãn 2 yêu cầu:
+    //     thứ nhất số đó thuộc dãy fibonacci ,
+    //     thứ 2 số đó phải là số nguyên tố. In ra mảng đấy.
+
+    function display(number) {
+        let arrM =[];
+       let arrF = dayFibonaci(number);
+        for (let i = 0; i <=number ; i++) {       // hàm vừa kiểm tra xem số vừa nhập phải số nguyên tố và fibonacci không
+            if (arrF.includes(i)&&soNguyenTo(i)){    // nếu thỏa mãn 2 điều kiền thì push ra mảng mới và hiển thị kết quả mảng mới đó
+                  arrM.push(i)
+            }
+        }
+        return arrM;
+    }
+    function soNguyenTo(number) {
+        if (number<2){
+            return false;
+        }                           // hàm kiểm tra số nguyên tố
+        for (let i = 2; i <number; i++) {
+            if (number%i ===0){
+                return false;
+            }
+        }
+        return true;
+    }
+    function dayFibonaci(n) {
+        let soThuNhat = 0;
+        let soThuHai = 1;
+        let soTiepTheo = 0;
+        let arr = [];
+        for (let i = 0; soThuNhat <= n; i++) {
+            if (i <= 1) {
+                soTiepTheo = i;
+            } else {                                  // hàm kiểm tra số fibonacci
+                arr.push(soThuNhat);
+                soTiepTheo = soThuNhat + soThuHai;
+                soThuNhat = soThuHai;
+                soThuHai = soTiepTheo;
+            }
+        }
+        return arr;
+    }
+    let number1 = +prompt("nhập số");
+    document.write(display(number1));
+
+</script>
+</body>
+</html>

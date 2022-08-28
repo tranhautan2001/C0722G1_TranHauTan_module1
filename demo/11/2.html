@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<SCRIPT>
+    // Bài 2: Viết hàm có tham số truyền vào là một chuỗi các ký tự.Hàm thực hiện tạo ra một
+    // cụm từ viết tắt
+    // - Nếu chuỗi có nhiều hơn hoặc bằng 2 từ trở lên thì hàm sẽ trả về 1 cụm từ viết tắt
+    // là lấy các ký tự đầu tiên của từng từ và đổi sang in hoa.
+    //     Ví dụ: object Oriented programming =&gt; kết quả trả về :OOP
+    // - Nếu Chuỗi chỉ có duy nhất 1 từ thì kết quả trả về là 1 thông báo &quot;Chuỗi chỉ có 1
+    // từ nên không cần viết tắc&quot;
+    // - Ví du: ObjectOriented =&gt; chuỗi này chỉ được tính chỉ có 1 từ
+
+    let string = "object Oriented programming";
+    let arr = string.split(" ");
+    console.log(arr);
+    function kiemTra(str) {
+        let ketQua = "";
+        for (let i = 0; i <str.length; i++) {
+           ketQua+=str[i][0].toUpperCase();
+        }
+       return ketQua;
+    }
+    alert(kiemTra(arr));
+
+</SCRIPT>
+</body>
+</html>

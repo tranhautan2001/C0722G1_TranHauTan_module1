@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="themMoi()">Thêm mới</button>
+<p id="display"></p>
+<script>
+    class MayTinh {
+        constructor(maMay, tenMay, tenHangSanXuat, giaBan) {
+            this.maMay = maMay;
+            this.tenMay = tenMay;
+            this.tenHangSanXuat = tenHangSanXuat;
+            this.giaBan = giaBan;
+        }
+
+        setmaMay(maMay) {
+            this.maMay = maMay;
+        }
+
+        settenMay(tenMay) {
+            this.tenMay = tenMay;
+        }
+
+        settenHangSanXuat(tenHangSanXuat) {
+            this.tenHangSanXuat = tenHangSanXuat;
+        }
+
+        setgiaBan(giaBan) {
+            this.giaBan = giaBan;
+        }
+
+        getmaMay() {
+            return this.maMay;
+        }
+
+        gettenMay() {
+            return this.tenMay;
+        }
+
+        gettenHangSanXuat() {
+            return this.tenHangSanXuat;
+        }
+
+        getgiaBan() {
+            return this.giaBan;
+        }
+    }
+        let asus = new MayTinh("glxt 750h", "Gamming", "asus", "số tiền")
+        let dell = new MayTinh("34lh 720", "Gamming1", "dell", "số tiền")
+        let acer = new MayTinh("726" , "Gamming2", "acer", "số tiền")
+        let apple = new MayTinh("25680", "Gamming3", "apple", "số tiền")
+        let danhSachMay = [asus, dell, acer, apple];
+        display(danhSachMay);
+
+        // định nghĩa hàm them mới
+        function themMoi() {
+            let maMay = prompt("nhập vào mã máy");
+            let tenMay = prompt("nhập vào tên máy");
+            let tenHangSanXuat = prompt("nhập vào hãng sản xuất");
+            let giaBan = prompt("nhập vào giá bán");
+            let xeMoi = new MayTinh(maMay, tenMay, tenHangSanXuat, giaBan);
+            danhSachMay.push(xeMoi);
+            display(danhSachMay);
+        }
+
+        // định nghĩa hàm hiện thị
+        function display(danhSach) {
+            let tableString = '<table border="1">\n' +
+                '    <tr>\n' +
+                '        <th>STT</th>\n' +
+                '        <th>Mã Máy</th>\n' +
+                '        <th>Tên Máy</th>\n' +
+                '        <th>Tên Hãng sản xuất</th>\n' +
+                '        <th>Giá Bán</th>\n' +
+                '        <th>xóa</th>\n' +
+                '    </tr>';
+            for (let i = 0; i < danhSach.length; i++) {
+                tableString += '<tr>\n' +
+                    '        <td>' + (i + 1) + '</td>\n' +
+                    '        <td>' + danhSach[i].getmaMay() + '</td>\n' +
+                    '        <td>' + danhSach[i].gettenMay() + '</td>\n' +
+                    '        <td>' + danhSach[i].gettenHangSanXuat() + '</td>\n' +
+                    '        <td>' + danhSach[i].getgiaBan() + '</td>\n' +
+                    '        <td><input type="button" value="xoa" onclick="xoa(' + i + ')"></td>\n' +
+                    '    </tr>';
+            }
+            tableString += '</table>';
+            document.getElementById("display").innerHTML = tableString;
+        }
+
+        function xoa(index) {
+            danhSachMay.splice(index, 1);
+            display(danhSachMay);
+    }
+</script>
+</body>
+</html>
